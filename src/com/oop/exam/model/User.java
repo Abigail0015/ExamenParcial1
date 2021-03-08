@@ -7,13 +7,13 @@ public class User
 
     public User(String userName, String correo)
     {
-        this.userName = userName;
+        this.username = userName;
         this.correo = correo;
     }
 
     public String getUserName()
     {
-        return userName;
+        return username;
     }
 
     public String getUsername()

@@ -21,5 +21,8 @@ public class MovieManager {
     }
 
 
-
+    public Movie findMovie(String movie)
+    {
+       
+    }
 }

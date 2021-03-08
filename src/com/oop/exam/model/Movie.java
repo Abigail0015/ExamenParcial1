@@ -8,10 +8,10 @@ public class Movie
     String title;
     int year;
     String director;
-    Platform platforms;
+    private  List <Platform>platforms;
     private List<String> actors;
     String Synopsis;
-    Review reviews;
+    private List<Review> reviews;
 
     public Movie(String title,int year,String director;)
     {
@@ -23,8 +23,9 @@ public class Movie
 
     public void addReview(Review review)
     {
-        this.reviews = review;
+        this.reviews.add(review);
     }
+
 
     public String getTitle()
     {
@@ -47,9 +48,8 @@ public class Movie
         this.actors = actors;
     }
 
-    public void setPlatforms(Platform platform)
-    {
-        this.platforms = platform;
+    public void setPlatforms(List<Platform> platforms) {
+        this.platforms = platforms;
     }
 
     public void setSynopsis(String synopsis)
@@ -62,7 +62,11 @@ public class Movie
         return actors;
     }
 
-    public Review getReviews() {
+    public List<Review> getReviews() {
         return reviews;
+    }
+
+    public List<Platform> getPlatforms() {
+        return platforms;
     }
 }
